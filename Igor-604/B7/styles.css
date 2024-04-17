@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img img{
+    border-radius: 8px;
+    transform: filter 0.5s ease;
+
+    cursor: pointer;
+}
+
+.img img:hover{
+    filter: grayscale(100%);;
+}

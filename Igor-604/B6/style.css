@@ -1,0 +1,35 @@
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0
+} 
+
+.triangle {
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: changeShape 4s infinite alternate;
+}
+
+@keyframes changeShape {
+    0% {
+        background-color: blue;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        background-color: yellow;
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+        transform: rotate(90deg) scale(1.2);
+    }
+    100% {
+        background-color: blue;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+
